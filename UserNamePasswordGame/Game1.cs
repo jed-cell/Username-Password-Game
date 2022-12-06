@@ -94,7 +94,11 @@ namespace UserNamePasswordGame
             MessageBox.Show("Congratulation You found an Easter Egg Use this Wisely");
             MessageBox.Show("Your Game Counter is Now Set to 19\r\n\b Use This Wisely");
             Counter = 19;
-            GameCounter();
+            intRandom1= 0;  
+            intRandom2= 0;
+            lblNumberofroundsCorrect.Text = Counter.ToString();
+            lblNumber1.Text = intRandom1.ToString();
+            lblNumber2.Text = intRandom2.ToString();
         }
 
         private void Game1_Load(object sender, EventArgs e)
